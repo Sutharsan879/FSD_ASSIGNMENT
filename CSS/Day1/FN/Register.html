@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +16,33 @@
         }
         table
         {
-            /* width: 50vw; */
+            box-shadow: 5px 5px 2px gray, inset 2px 2px 5px gray;
+            border-radius: 5px;
+            width: 30vw;
+            padding: 0px 0px 0px 30px;
         }
         th,td
         {
-            padding: 10px 20px;
+            padding: 5px;
+        }
+        .head
+        {
+            font-size: 30px;
+            padding: 15px;
+        }
+        input , textarea
+        {
+            padding: 4px 5px;
+            border: 1.5px solid gray;
+            border-radius: 5px;
+        }
+        .btn
+        {
+            border: 2px solid gray;
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-size: 15px;
+            font-weight: 550;
         }
         
     </style>
@@ -27,9 +50,9 @@
 
 <body>
     <br><br>
-    <table  align="center" border="1">
+    <table  align="center">
         <tr>
-            <th colspan="2">Register Page</th>
+            <th colspan="2" class="head">Register Page</th>
         </tr>
         <tr>
             <td>Student Name</td>
@@ -77,9 +100,9 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" placeholder="Login"></td>
+            <td><input type="submit" placeholder="Login" class="btn"></td>
         </tr>
     </table>
 </body>
 
-</html>
+</html> 
