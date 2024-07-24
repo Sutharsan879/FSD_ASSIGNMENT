@@ -44,15 +44,15 @@
             }
             if(op=="trim")
             {
-                result="Trim : "+s.trim();
+                result="Trim : "+s.trim(5);
             }
             if(op=="tstart")
             {
-                result="Trimstart : "+s.trimStart();
+                result="Trimstart : "+s.trimStart(0);
             }
             if(op=="tend")
             {
-                result="TrimEnd : "+s.trimEnd();
+                result="TrimEnd : "+s.trimEnd(6);
             }
             if(op=="repeat")
             {
@@ -60,11 +60,11 @@
             }
             if(op=="replace")
             {
-                result="Replace : "+s.replace("World"+"Hello");
+                result="Replace : "+s.replace("World","Hello");
             }
             if(op=="replaceall")
             {
-                result="Replaceall : "+s.replaceAll("World"+"Hello");
+                result="Replaceall : "+s.replaceAll("World","Hello");
             }
             if(op=="split")
             {
