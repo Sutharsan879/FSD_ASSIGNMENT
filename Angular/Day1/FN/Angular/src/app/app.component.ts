@@ -52,6 +52,4 @@ export class AppComponent {
   {
     this.email="sutharsanm879@gmail.com"
   }
-  // <img [src]="download.png"/>
-
 }
