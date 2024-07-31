@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalculatorService } from './calculator.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,9 @@ export class AppComponent {
   selectvehicle:string;
   mystyle:{};
   myclass:string
-  constructor()
+  sum:number
+  difference:number
+  constructor(private calc:CalculatorService)
   {
     this.name="Sutharsan";
     this.age=20;
@@ -27,6 +30,8 @@ export class AppComponent {
     this.selectvehicle="";
     this.mystyle={'width':'40%','border':'2px solid green','border-radius':'25px'};
     this.myclass="MyClass1";
+    this.sum=calc.getAddition(10,20);
+    this.difference=calc.getSubtraction(20,10);
   }
   setSelectedItem(vec: string)
   {
